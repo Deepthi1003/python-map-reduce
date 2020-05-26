@@ -2,8 +2,8 @@
 # Easy to test
 # Not quite Hadoop-ready
 
-with open("12sorteroutput.txt","r") as sorted:
-  with open("13reduceroutput.txt", "w") as output:
+with open("sorted-list.txt","r") as sorted:
+  with open("reduce-list.txt", "w") as output:
 
     thisKey = ""
     thisValue = 0.0
