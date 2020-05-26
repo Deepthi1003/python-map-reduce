@@ -37,17 +37,21 @@ Basic Python introduction and concepts needed in preparation for working with ma
 
 - PowerShell and Bash use the same commands:
 
-  ```Bash
+  ```
   cat purchases.txt
-  cat purchases.txt | python 21mapper.py
-  cat purchases.txt | python 21mapper.py | sort
-  cat purchases.txt | python 21mapper.py | sort  | python 22reducer.py
+  cat purchases.txt | py 21mapper.py
+  cat purchases.txt | py 21mapper.py | sort
+  cat purchases.txt | py 21mapper.py | sort  | py 22reducer.py
    ```
+- In order to execute the commands, an individual can use ***py name_of_the_pythonfile*** or ***python name_of_the_pythonfile***.
+
+- Here I have used ***py name_of_the_pythionfile*** for convenience.
+
 - The commands shown above are the incremental commands which are used so as to understand the procedure as to how they actually work.
 
 - The command which is to be used so as to process larger dataset (***purchases.txt***) is as stated below:
   ```
-  cat purchases.txt | python 21mapper.py | sort  | python 22reducer.py 
+  cat purchases.txt | py 21mapper.py | sort  | py 22reducer.py 
   ```
 
 ## References
