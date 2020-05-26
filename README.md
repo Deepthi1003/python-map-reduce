@@ -24,26 +24,33 @@ py 13reducer.py
 
 ## Case 2:  Use standard input and output
 
-Use the console (standard input and output) and shell commands to pipe information.  We'll use the built-in shell sort command, so we don't need that anymore. 
+- Use the console (standard input and output) and shell commands to pipe information.  We'll use the built-in shell sort command, so we don't need that anymore. 
 
-cat data | map | sort | reduce
+- The basic syntax of the final outcome command is as described below:
+   ```
+   cat data | map | sort | reduce
+   ```
 
-PowerShell and Bash use the same commands:
+- PowerShell and Bash use the same commands:
 
-```Bash
-cat part.txt
-cat part.txt | python 21mapper.py
-cat part.txt | python 21mapper.py | sort
-cat part.txt | python 21mapper.py | sort  | python 22reducer.py
+  ```Bash
+  cat purchases.txt
+  cat purchases.txt | python 21mapper.py
+  cat purchases.txt | python 21mapper.py | sort
+  cat purchases.txt | python 21mapper.py | sort  | python 22reducer.py
+   ```
+- The commands shown above are the incremental commands which are used so as to understand the procedure as to how they actually work.
 
-```
+- The command which is to be used so as to process larger dataset (purchases.txt) is as stated below:
+  ```
+  cat purchases.txt | python 21mapper.py | sort  | python 22reducer.py 
+  ```
 
 ## References
 
 - [Udacity "Introduction to Hadoop and MapReduce"](https://classroom.udacity.com/courses/ud617/)
 - [IBM Python for Data Science](https://cognitiveclass.ai/courses/python-for-data-science)
 - [Basic Setup for Big Data](https://github.com/denisecase/basic-setup-for-bigdata)
-
-## Repository
-
 - [https://github.com/denisecase/python-map-reduce](https://github.com/denisecase/python-map-reduce)
+
+
